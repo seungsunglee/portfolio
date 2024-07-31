@@ -1,95 +1,66 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Hero from "@/components/Hero"
+import NavBar from "@/components/Navbar"
+import Skills from "@/components/Skills"
+import Footer from "@/components/Footer"
+import Container from "@mui/material/Container"
+import Typography from "@mui/material/Typography"
+import Section from "@/components/Section"
+import Link from "@mui/material/Link"
+import Box from "@mui/material/Box"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div>
+      <NavBar />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Container maxWidth="md">
+        <Hero />
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <Section name="about" title="About Me">
+          <Typography variant="h6" paragraph>
+            I am a web developer from Japan, currently staying in Sydney. I have
+            over five years of experience in web development, with a particular
+            expertise in frontend development using React.
+            <br />
+            <br />
+            In the past, I built and operated a classified website from scratch
+            using React and Next.js for the frontend and Python and Django for
+            the backend. The website you are viewing now is also built with
+            React and Next.js.
+            <br />
+            <br />
+            While I do not have business experience in web development, I
+            constantly acquire the latest knowledge and dedicate myself to
+            coding every day.
+          </Typography>
+        </Section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        <Section name="skills" title="Skills">
+          <Skills />
+        </Section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+        <Section name="contact" title="Contact Me">
+          <Box sx={{ textAlign: "center", overflowWrap: "break-word" }}>
+            <Link
+              href="mailto:k.g.miyamoto@gmail.com"
+              underline="none"
+              variant="h3"
+              fontWeight="bold"
+              sx={{
+                background: "#AB5DFF",
+                background:
+                  "linear-gradient(to right, #AB5DFF 0%, #1B7DB1 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              k.g.miyamoto@gmail.com
+            </Link>
+          </Box>
+        </Section>
+      </Container>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+      <Footer />
+    </div>
+  )
 }
