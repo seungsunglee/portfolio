@@ -26,7 +26,14 @@ export default function Home() {
             In the past, I built and operated a classified website from scratch
             using React and Next.js for the frontend and Python and Django for
             the backend. The website you are viewing now is also built with
-            React and Next.js.
+            React and Next.js. The source code can be found{" "}
+            <Link
+              href="https://github.com/seungsunglee/portfolio"
+              target="_blank"
+              rel="noopener"
+            >
+              here.
+            </Link>
             <br />
             <br />
             While I do not have business experience in web development, I

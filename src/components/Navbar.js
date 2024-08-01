@@ -10,10 +10,13 @@ import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 import ListItemButton from "@mui/material/ListItemButton"
 import ListItemText from "@mui/material/ListItemText"
-import MenuIcon from "@mui/icons-material/Menu"
 import Button from "@mui/material/Button"
 import Container from "@mui/material/Container"
 import Link from "@mui/material/Link"
+
+import MenuIcon from "@mui/icons-material/Menu"
+import GitHubIcon from "@mui/icons-material/GitHub"
+
 import Image from "next/image"
 
 const Items = [
@@ -40,6 +43,17 @@ export default function NavBar(props) {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItem key="github" disablePadding>
+          <ListItemButton
+            component={Link}
+            href="https://github.com/seungsunglee/portfolio"
+            target="_blank"
+            rel="noopener"
+            sx={{ textAlign: "center" }}
+          >
+            <ListItemText primary="GitHub" />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   )
@@ -88,6 +102,16 @@ export default function NavBar(props) {
                   {item.title}
                 </Button>
               ))}
+              <IconButton
+                component={Link}
+                href="https://github.com/seungsunglee/portfolio"
+                target="_blank"
+                rel="noopener"
+                size="large"
+                color="inherit"
+              >
+                <GitHubIcon />
+              </IconButton>
             </Box>
           </Toolbar>
         </Container>
