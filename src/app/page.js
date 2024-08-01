@@ -50,8 +50,7 @@ export default function Home() {
           <Box sx={{ textAlign: "center", overflowWrap: "break-word" }}>
             <Link
               href="mailto:k.g.miyamoto@gmail.com"
-              underline="none"
-              variant="h3"
+              variant="h4"
               fontWeight="bold"
               sx={{
                 background: "#AB5DFF",
@@ -62,6 +61,23 @@ export default function Home() {
               }}
             >
               k.g.miyamoto@gmail.com
+            </Link>
+            <Typography variant="h6" my={1}>
+              or
+            </Typography>
+            <Link
+              href="tel:k.g.miyamoto@gmail.com"
+              variant="h4"
+              fontWeight="bold"
+              sx={{
+                background: "#AB5DFF",
+                background:
+                  "linear-gradient(to right, #AB5DFF 0%, #1B7DB1 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              0421039070
             </Link>
           </Box>
         </Section>
