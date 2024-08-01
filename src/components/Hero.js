@@ -16,7 +16,7 @@ export default function Hero() {
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
         justifyContent: "space-between",
-        marginTop: 10,
+        marginTop: { xs: 5, md: 10 },
       }}
     >
       <Stack spacing={3} sx={{ width: "100%", marginBottom: 4 }}>

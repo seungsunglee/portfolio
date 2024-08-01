@@ -66,7 +66,7 @@ export default function Home() {
               or
             </Typography>
             <Link
-              href="tel:k.g.miyamoto@gmail.com"
+              href="tel:0421039070"
               variant="h4"
               fontWeight="bold"
               sx={{
