@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my [portfolio](https://portfolio-seungsunglees-projects.vercel.app/) source code.
 
-## Getting Started
+## About Me
 
-First, run the development server:
+I am a web developer from Japan, currently staying in Sydney. I have over five years of experience in web development, with a particular expertise in frontend development using React.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+In the past, I built and operated a classified website from scratch using React and Next.js for the frontend and Python and Django for the backend. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+While I do not have business experience in web development, I constantly acquire the latest knowledge and dedicate myself to coding every day.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Portfolio](https://portfolio-seungsunglees-projects.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/seung-sung-lee/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
+## Skills
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- React
+- Redux
+- Next.js
+- MUI
+- Python
+- Django
+- PHP
+- MySQL
+- Linux
+- Photoshop
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact Me
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+k.g.miyamoto@gmail.com

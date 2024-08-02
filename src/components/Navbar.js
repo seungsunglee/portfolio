@@ -16,6 +16,7 @@ import Link from "@mui/material/Link"
 
 import MenuIcon from "@mui/icons-material/Menu"
 import GitHubIcon from "@mui/icons-material/GitHub"
+import LinkedInIcon from "@mui/icons-material/LinkedIn"
 
 import Image from "next/image"
 
@@ -43,17 +44,6 @@ export default function NavBar(props) {
             </ListItemButton>
           </ListItem>
         ))}
-        <ListItem key="github" disablePadding>
-          <ListItemButton
-            component={Link}
-            href="https://github.com/seungsunglee/portfolio"
-            target="_blank"
-            rel="noopener"
-            sx={{ textAlign: "center" }}
-          >
-            <ListItemText primary="GitHub" />
-          </ListItemButton>
-        </ListItem>
       </List>
     </Box>
   )
@@ -102,16 +92,6 @@ export default function NavBar(props) {
                   {item.title}
                 </Button>
               ))}
-              <IconButton
-                component={Link}
-                href="https://github.com/seungsunglee/portfolio"
-                target="_blank"
-                rel="noopener"
-                size="large"
-                color="inherit"
-              >
-                <GitHubIcon />
-              </IconButton>
             </Box>
           </Toolbar>
         </Container>
