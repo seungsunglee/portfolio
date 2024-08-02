@@ -9,6 +9,19 @@ import Stack from "@mui/material/Stack"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 
+const items = [
+  {
+    href: "https://github.com/seungsunglee/portfolio/",
+    icon: <GitHubIcon fontSize="large" />,
+    title: "GitHub",
+  },
+  {
+    href: "https://www.linkedin.com/in/seung-sung-lee/",
+    icon: <LinkedInIcon fontSize="large" />,
+    title: "LinkedIn",
+  },
+]
+
 export default function About() {
   return (
     <>
@@ -36,54 +49,32 @@ export default function About() {
       </Typography>
 
       <Grid container spacing={2} mt={3}>
-        <Grid xs={6}>
-          <Card>
-            <CardActionArea
-              component={Link}
-              href="https://github.com/seungsunglee/portfolio/"
-              target="_blank"
-              rel="noopener"
-              underline="none"
-            >
-              <CardContent
-                sx={{
-                  padding: 3,
-                }}
+        {items.map((item) => (
+          <Grid key={item.title} xs={6}>
+            <Card>
+              <CardActionArea
+                component={Link}
+                href={item.href}
+                target="_blank"
+                rel="noopener"
+                underline="none"
               >
-                <Stack direction="row" spacing={2} alignItems="center">
-                  <GitHubIcon fontSize="large" />
-                  <Typography component="div" variant="h5">
-                    GitHub
-                  </Typography>
-                </Stack>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-        <Grid xs={6}>
-          <Card>
-            <CardActionArea
-              component={Link}
-              href="https://www.linkedin.com/in/seung-sung-lee/"
-              target="_blank"
-              rel="noopener"
-              underline="none"
-            >
-              <CardContent
-                sx={{
-                  padding: 3,
-                }}
-              >
-                <Stack direction="row" spacing={2}>
-                  <LinkedInIcon fontSize="large" />
-                  <Typography component="div" variant="h5">
-                    LinkedIn
-                  </Typography>
-                </Stack>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
+                <CardContent
+                  sx={{
+                    padding: 3,
+                  }}
+                >
+                  <Stack direction="row" spacing={2} alignItems="center">
+                    {item.icon}
+                    <Typography component="div" variant="h5">
+                      {item.title}
+                    </Typography>
+                  </Stack>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        ))}
       </Grid>
     </>
   )
