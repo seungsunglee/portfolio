@@ -15,8 +15,6 @@ import Container from "@mui/material/Container"
 import Link from "@mui/material/Link"
 
 import MenuIcon from "@mui/icons-material/Menu"
-import GitHubIcon from "@mui/icons-material/GitHub"
-import LinkedInIcon from "@mui/icons-material/LinkedIn"
 
 import Image from "next/image"
 
@@ -40,7 +38,11 @@ export default function NavBar(props) {
       <List sx={{ pt: 3 }}>
         {Items.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              component={Link}
+              href={item.name}
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>

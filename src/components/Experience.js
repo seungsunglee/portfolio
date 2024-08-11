@@ -1,9 +1,10 @@
 import Typography from "@mui/material/Typography"
 import Link from "@mui/material/Link"
+import Box from "@mui/material/Box"
 
 export default function Experience() {
   return (
-    <>
+    <Box sx={{ overflowWrap: "break-word" }}>
       <Typography component="h4" variant="h4" gutterBottom>
         Portfolio
       </Typography>
@@ -50,6 +51,6 @@ export default function Experience() {
           <li>And more</li>
         </ul>
       </Typography>
-    </>
+    </Box>
   )
 }
