@@ -12,16 +12,16 @@ I am a web developer from Japan, currently staying in Sydney. I have over five y
 Website: https://portfolio-seungsunglees-projects.vercel.app/  
 Source Code: https://github.com/seungsunglee/portfolio/
 
-### CLASSIFIED WEBSITE
-Front-end Source Code: https://github.com/seungsunglee/classified_frontend  
-Back-end Source Code: https://github.com/seungsunglee/classified_backend
+Build with Next.js (React.js) and MUI.
 
-Full-stack website using Next.js (React.js) for the front-end and Django Rest Framework (Python) for the back-end. User registration, authentication, payment function with Stripe, distance search using longitude and latitude, messaging function between users,  etc.
+### CLASSIFIED WEBSITE
+Front-end Source Code: https://github.com/seungsunglee/classified_frontend/  
+Back-end Source Code: https://github.com/seungsunglee/classified_backend/
+
+Full-stack website using Next.js (React.js) for the front-end and Django REST Framework (Python) for the back-end. User registration, authentication, payment function with Stripe, distance search using longitude and latitude, messaging function between users,  etc.
 
 
 ## Skills
-
-To learn more about Next.js, take a look at the following resources:
 
 - HTML
 - CSS

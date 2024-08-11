@@ -11,7 +11,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn"
 
 const items = [
   {
-    href: "https://github.com/seungsunglee/portfolio/",
+    href: "https://github.com/seungsunglee/",
     icon: <GitHubIcon fontSize="large" />,
     title: "GitHub",
   },
@@ -25,27 +25,11 @@ const items = [
 export default function About() {
   return (
     <>
-      <Typography variant="h6" paragraph>
-        I am a web developer from Japan, currently staying in Sydney. I have
-        over five years of experience in web development, with a particular
-        expertise in frontend development using React.
-        <br />
-        <br />
-        In the past, I built and operated a classified website from scratch
-        using React and Next.js for the frontend and Python and Django for the
-        backend. The website you are viewing now is also built with React and
-        Next.js. The source code can be found{" "}
-        <Link
-          href="https://github.com/seungsunglee/portfolio/"
-          target="_blank"
-          rel="noopener"
-        >
-          here.
-        </Link>
-        <br />
-        <br />
-        While I do not have business experience in web development, I constantly
-        acquire the latest knowledge and dedicate myself to coding every day.
+      <Typography variant="h6" fontWeight={400} paragraph>
+        I have over five years of experience in web development, with a
+        particular expertise in full stack development using React and Python. I
+        constantly acquire the latest knowledge and dedicate myself to coding
+        every day.
       </Typography>
 
       <Grid container spacing={2} mt={3}>

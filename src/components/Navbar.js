@@ -22,6 +22,7 @@ import Image from "next/image"
 
 const Items = [
   { name: "#about", title: "About" },
+  { name: "#experience", title: "Experience" },
   { name: "#skills", title: "Skills" },
   { name: "#contact", title: "Contact" },
 ]
